@@ -27,7 +27,7 @@ function Cardproducts() {
                 transform: `translate(${cursorPosition.x * 0.01}px, ${cursorPosition.y * 0.01}px)`,
               }}
             />
-            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4 w-[282px] text-center text-sm mt-4 ml-4">
+            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4 w-[282px] text-center text-sm mt-4 ml-11">
               Pamper your skin with the hydrating embrace of botanical extracts
               enriched with the soothing essence of chamomile and the
               revitalizing touch of vitamin C
@@ -49,7 +49,7 @@ function Cardproducts() {
                 transform: `translate(${cursorPosition.x * 0.01}px, ${cursorPosition.y * 0.01}px)`,
               }}
             />
-            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4  w-[282px] text-center  text-sm mt-4 ml-4">
+            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4  w-[282px] text-center  text-sm mt-4 ml-11">
               Pamper your skin with the hydrating embrace of botanical extracts
               enriched with the soothing essence of chamomile and the
               revitalizing touch of vitamin C

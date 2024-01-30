@@ -6,7 +6,7 @@ import { HiArrowDownLeft } from "react-icons/hi2";
 function Promard() {
   return (
     <>
-      <div className="text-[#452E5D] ">
+      <div className="text-[#452E5D] ml-3">
         <h1  className="custom-font sm:text-4xl text-center mt-20 mb-10 text-[#452E5D] ">Explore Our brand deigned</h1>
         <section className="sm:flex sm:justify-center mt-28">
           <img src={designP} className="sm:w-[582px] sm:h-[651px] w-[282px] h-[325px] ml-5" alt="" />
