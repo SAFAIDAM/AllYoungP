@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #DBD4E9;
+  overflow-x: hidden;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: "Ogilen Personal Use";
+  src: url(../public/OgilenPersonalUse-1G6Re.woff);
+}
+
+.custom-font {
+  font-family: "Ogilen Personal Use", sans-serif;
+}
+
