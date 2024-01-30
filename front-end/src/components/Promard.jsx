@@ -13,7 +13,7 @@ function Promard() {
           <div className="sm:mt-96 sm:ml-10 ml-4 mt-11">
             <div className="flex gap-44 ">
             <button className="border-[3px] border-[#452E5D] rounded-full w-[56px] h-[56px] sm:w-[100px] sm:h-[100px] hover:">
-              <HiArrowDownLeft className="sm:w-[39px] sm:h-[39px] mr-auto ml-auto w-[30px] h-[30px] hover:translate-x-1 hover:transition-[3s]" />
+              <HiArrowDownLeft className="sm:w-[39px] sm:h-[39px] mr-auto ml-auto w-[30px] h-[30px] hover:translate-y-2  transition-[0.3s] hover:transition-[3s]" />
             </button>
               <img src={sunflower} className="hidden sm:block sm:w-[63px] sm:h-[63px]" alt="" />
             </div>

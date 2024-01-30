@@ -1,14 +1,44 @@
-import React from "react";
+
+
+import React, { useState } from "react";
 import allyoungjars from "../assets/allyoungjars.png";
 import button from "../assets/button-2025.png";
 import { HiArrowRight } from "react-icons/hi2";
+import gsap from "gsap";
+import { useRef, useEffect } from "react";
 
 function Hero() {
+
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => setOffsetY(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  const h1Ref = useRef(null);
+
+  
+  useEffect(() => {
+    gsap.to(h1Ref.current, {
+      y: offsetY * 0.1, // Adjust the multiplier to control the intensity
+      ease: "power1.out",
+    });
+  }, [offsetY]);
+
   return (
     <>
-      <div className="text-[#452E5D] ">
+      <divn className="text-[#452E5D] ">
         <div>
-          <h1 className="custom-font sm:mt-10 sm:text-6xl sm:w-[800px] sm:text-center sm:ml-auto sm:mr-auto text-center w-[254px] mr-auto ml-auto mt-5 text-xl">
+          <h1 ref={h1Ref} className="custom-font sm:mt-10 sm:text-6xl sm:w-[800px] sm:text-center sm:ml-auto sm:mr-auto text-center w-[254px] mr-auto ml-auto mt-5 text-xl">
             Your Path to Healthy Glowing Skin Begins Here{" "}
           </h1>
         </div>
@@ -65,28 +95,33 @@ function Hero() {
               natural beauty
             </p>
           </div>
-          <div className="flex items-center ml-36 mt-3 mb-6 gap-2 ">
-            <button className="border-[3px] border-[#452E5D] rounded-full w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] hover:">
-              <HiArrowRight className="sm:w-[39px] sm:h-[39px] mr-auto ml-auto w-[30px] h-[30px] hover:translate-x-1 hover:transition-[3s]" />
+          <div  className="flex items-center ml-36 mt-3 mb-6 gap-1">
+            <button 
+               className="border-[3px] border-[#452E5D] rounded-full w-[50px] h-[50px] sm:w-[100px] sm:h-[100px]">
+              <HiArrowRight className="sm:w-[39px] sm:h-[39px] mr-auto ml-auto w-[30px] h-[30px] hover:translate-x-2 transition-[0.3s] hover:transition-[3s]" />
             </button>
             <p className="sm:text-xl text-xs">View All Products </p>
           </div>
         </div>
         <div className="sm:mt-[-100px]">
           <div className="sm:mr-auto sm:ml-auto w-[294px] h-[268px] ml-auto mr-auto sm:w-[543px] sm:h-[494px]">
-            <img src={allyoungjars} alt="" />
+            <img  style={{transform: `translateY(${offsetY * 0.2}px)`}} src={allyoungjars} alt="" />
           </div>
-          <div className="sm:absolute sm:bottom-[-79px] sm:left-[400px] relative bottom-[98px] lg:bottom-[-70px]">
-            <button className="bg-[#EDE8E5] border border-2 border-[#452E5D] rounded-full sm:w-[173px] sm:h-[173px]  w-[97px] h-[97px]">
-              <img
-                className="mr-auto ml-auto w-[84px] sm:w-[140px] "
+          <div  onMouseMove={handleMouseMove}  className="sm:absolute sm:bottom-[-100px] sm:left-[400px] relative bottom-[90px]">
+            <button style={{
+                transform: `translate(${cursorPosition.x * 0.03}px, ${cursorPosition.y * 0.03}px)`,
+              }}
+              className="bg-[#EDE8E5] border border-2 border-[#452E5D] rounded-full sm:w-[173px] sm:h-[173px]  w-[97px] h-[97px]"
+            >
+              <img 
+                className="mr-auto ml-auto w-[84px] sm:w-[140px]"
                 src={button}
                 alt=""
               />
             </button>
           </div>
         </div>
-      </div>
+      </divn>
     </>
   );
 }
