@@ -29,7 +29,7 @@ function Hero() {
   
   useEffect(() => {
     gsap.to(h1Ref.current, {
-      y: offsetY * 0.1, // Adjust the multiplier to control the intensity
+      y: offsetY * 0.1, 
       ease: "power1.out",
     });
   }, [offsetY]);
