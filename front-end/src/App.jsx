@@ -6,15 +6,28 @@ import Cardproducts from './components/Cardproducts';
 import Promard from './components/Promard';
 import Footer from './components/Footer';
 import { HiArrowUp } from "react-icons/hi2";
+import gsap from "gsap";
+import { useRef, useEffect , useState} from 'react';
 
 
 function App() {
   const scrollToTop = () => {
     scroll.scrollToTop({
       duration: 800,
-      smooth: 'easeInOutQuad', // You can choose different easing functions
+      smooth: 'easeInOutQuad', 
     });
   };
+
+  const h1Ref = useRef(null);
+  const [offsetY, setOffsetY] = useState(0);
+  const handleScroll = () => setOffsetY(window.pageYOffset)
+  
+  useEffect(() => {
+    gsap.to(h1Ref.current, {
+      y: offsetY * 0.1, 
+      ease: "power1.out",
+    });
+  }, [offsetY]);
 
   return (
     <>
@@ -25,7 +38,7 @@ function App() {
         <div>
           {/* Use Link to add smooth scrolling to the welcome section */}
           <Link to="welcomeSection" smooth duration={800}>
-            <h1 className="custom-font sm:text-[45px] sm:w-[1211px] text-[16px] text-center ml-auto mr-auto sm:pt-20 sm:pb-20 text-[#D9D3E8] pt-20 pb-20">
+            <h1 ref={h1Ref} className="custom-font sm:text-[45px] sm:w-[1211px] text-[16px] text-center ml-auto mr-auto sm:pt-20 sm:pb-20 text-[#D9D3E8] pt-20 pb-20">
               Welcome to a world where skincare meets indulgence At allYoung we believe in the transformative power of self-care
             </h1>
           </Link>
