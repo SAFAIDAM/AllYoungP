@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import Cardproducts from './components/Cardproducts';
 import Promard from './components/Promard';
 import Footer from './components/Footer';
+import { HiArrowUp } from "react-icons/hi2";
+
 
 function App() {
   const scrollToTop = () => {
@@ -31,10 +33,10 @@ function App() {
       </div>
       <Cardproducts />
       <Promard />
-      <Footer />
-      {/* Add a button to scroll back to the top smoothly */}
-      <button className="scroll-to-top" onClick={scrollToTop}>
+      <button className="scroll-to-top border-[3px] border-[#452E5D] rounded-full w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] ml-10 mt-11" onClick={scrollToTop}>
+      <HiArrowUp className="sm:w-[39px] sm:h-[39px] mr-auto ml-auto w-[30px] h-[30px] hover:translate-y-2 transition-[0.3s] hover:transition-[3s]" />
       </button>
+      <Footer />
     </>
   );
 }
