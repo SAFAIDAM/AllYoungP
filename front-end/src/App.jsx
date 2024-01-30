@@ -34,7 +34,6 @@ function App() {
       <Footer />
       {/* Add a button to scroll back to the top smoothly */}
       <button className="scroll-to-top" onClick={scrollToTop}>
-        Scroll to Top
       </button>
     </>
   );
