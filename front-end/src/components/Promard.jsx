@@ -7,8 +7,8 @@ function Promard() {
   return (
     <>
       <div className="text-[#452E5D] ml-3">
-        <h1  className="custom-font sm:text-4xl text-center mt-20 mb-10 text-[#452E5D] ">Explore Our brand deigned</h1>
-        <section className="sm:flex sm:justify-center mt-28">
+        <h1  className="custom-font sm:text-4xl text-2xl text-center mt-20 mb-10 text-[#452E5D] ">Explore Our brand deigned</h1>
+        <section className="sm:flex sm:justify-center ml-auto mr-auto mt-28">
           <img src={designP} className="sm:w-[582px] sm:h-[651px] w-[282px] h-[325px] ml-5" alt="" />
           <div className="sm:mt-96 sm:ml-10 ml-4 mt-11">
             <div className="flex gap-44 ">

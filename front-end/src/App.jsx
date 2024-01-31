@@ -46,7 +46,7 @@ function App() {
       </div>
       <Cardproducts />
       <Promard />
-      <button className="scroll-to-top border-[3px] border-[#452E5D] rounded-full w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] ml-10 mt-11" onClick={scrollToTop}>
+      <button className="scroll-to-top border-[3px] border-[#452E5D] rounded-full w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] ml-10 mt-11 fixed bottom-10 right-10 z-50" onClick={scrollToTop}>
       <HiArrowUp className="sm:w-[39px] sm:h-[39px] mr-auto ml-auto w-[30px] h-[30px] hover:translate-y-2 transition-[0.3s] hover:transition-[3s]" />
       </button>
       <Footer />

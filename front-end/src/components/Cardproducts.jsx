@@ -14,20 +14,20 @@ function Cardproducts() {
   return (
     <>
       <div onMouseMove={handleMouseMove}>
-        <h1 className="custom-font sm:text-4xl text-center mt-10 mb-10 text-[#452E5D]">
+        <h1 className="custom-font sm:text-4xl text-2xl text-center mt-10 mb-10 text-[#452E5D]">
           Take Look At Our new Products
         </h1>
         <div className="text-[#452E5D] sm:flex justify-center">
           <section className="">
             <img
               src={softskin}
-              className="sm:w-[582px] sm:h-[651px]  w-[282px] h-[325px] ml-auto mr-auto"
+              className="sm:w-[582px] sm:h-[651px] w-[282px] h-[345px]  ml-auto mr-auto"
               alt=""
               style={{
                 transform: `translate(${cursorPosition.x * 0.01}px, ${cursorPosition.y * 0.01}px)`,
               }}
             />
-            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4 w-[282px] text-center text-sm mt-4 ml-11">
+            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4 w-[282px] text-center text-sm mt-4 ml-auto mr-auto">
               Pamper your skin with the hydrating embrace of botanical extracts
               enriched with the soothing essence of chamomile and the
               revitalizing touch of vitamin C
@@ -43,13 +43,13 @@ function Cardproducts() {
           <section className="">
             <img
               src={jarsProducts}
-              className="sm:hidden w-[282px] h-[325px] mr-auto ml-auto"
+              className="sm:hidden w-[282px] h-[345px] mr-auto ml-auto"
               alt=""
               style={{
                 transform: `translate(${cursorPosition.x * 0.01}px, ${cursorPosition.y * 0.01}px)`,
               }}
             />
-            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4  w-[282px] text-center  text-sm mt-4 ml-11">
+            <p className="custom-font sm:text-3xl sm:w-[624px] sm:mt-4  w-[282px] text-center  text-sm mt-4 ml-auto mr-auto">
               Pamper your skin with the hydrating embrace of botanical extracts
               enriched with the soothing essence of chamomile and the
               revitalizing touch of vitamin C

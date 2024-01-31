@@ -6,7 +6,7 @@ import styles from '../styles';
 function Navbar() {
   return (
     <nav className=''>
-      <div className='flex justify-center gap-10 sm:gap-56 mt-10  text-[#452E5D]'> 
+      <div className='flex justify-center gap-12 sm:gap-56 mt-10  text-[#452E5D]'> 
          
          <div> 
           <h1 className="custom-font text-2xl sm:text-4xl">allYoung</h1>
