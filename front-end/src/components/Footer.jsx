@@ -15,7 +15,7 @@ function Footer() {
           Elevate your skin care with all young
         </p>
         <div className="flex gap-10 justify-center mt-3">
-          <a href="">
+          <a href="https://instagram.com">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -43,7 +43,7 @@ function Footer() {
               />
             </svg>
           </a>
-          <a href="">
+          <a href="https://twitter.com/">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="39"
@@ -60,7 +60,7 @@ function Footer() {
               />
             </svg>
           </a>
-          <a href="https://instagram.com">
+          <a href="https://www.pinterest.com/" target="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="38"
