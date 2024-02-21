@@ -7,17 +7,14 @@ AllYoungP is a stylish and responsive beauty product landing page UI, designed t
 - Sleek and visually appealing design
 - Fully responsive layout for seamless user experience across devices
 - Effective product showcase highlighting key features and benefits
-- Intuitive navigation for easy browsing
-- Strategic call-to-action elements for user engagement
-- Optimized for performance with fast loading times
 
 ## Technologies
 - tailwindCss
 - React Js
 - Responsive design frameworks/libraries
 
-## License
-This project is licensed under the MIT License.
+## Design Prototype
+- design prototype on Figma
 
 ## Author 
 SAFA IDAM HAMED
